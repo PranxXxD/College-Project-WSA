@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="30dp"
+    android:transitionName="transition_login"
+
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/login_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="back"
+            android:padding="1dp"
+            android:src="@drawable/backbutton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/login_country_code_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="true"
+                app:ccp_showFullName="true"
+                app:ccp_showFlag="true"
+                android:background="@drawable/black_border"
+                android:padding="5dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Phone Number"
+                app:startIconDrawable="@drawable/signup_phoneno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorBlack"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="3dp"
+                app:boxStrokeColor="@color/colorBlack"
+                android:layout_below="@+id/login_country_code_picker">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_phone_number"
+                android:hint="ENTER PASSWORD"
+                android:padding="4dp"
+                app:boxStrokeColor="@color/colorBlack"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack"
+                app:startIconDrawable="@drawable/signup_password"
+                app:startIconTint="@color/colorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/forgot_password_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/colorBlack"
+                    android:text="REMEMBER ME"
+                    android:textColor="@color/colorBlack"
+
+                    android:textSize="12sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="#00000000"
+                    android:text="FORGOT PASSWORD"
+                    android:textSize="12sp"
+                    android:onClick="fogotpassword"/>
+
+
+            </RelativeLayout>
+            <ImageView
+
+                android:layout_alignParentRight="true"
+                android:id="@+id/captcha"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/forgot_password_block"
+                android:src="@drawable/captcha"/>
+            <CheckBox
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkboxcaptcha"
+                android:text="I'm not a robot"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@id/forgot_password_block"/>
+            <Button
+                android:id="@+id/letTheUserLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/captcha"
+                android:layout_marginTop="18dp"
+                android:background="@color/colorWhite"
+                android:text="LOGIN"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:onClick="letTheUserLogin"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/letTheUserLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:onClick="create_account"
+                android:text="CREATE ACCOUNT" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="16dp"
+                android:background="@drawable/white_circle"
+                android:elevation="8dp"
+                android:id="@+id/login_progressbar">
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

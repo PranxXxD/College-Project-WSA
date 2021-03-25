@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "334345397312",
+    "firebase_url": "https://womensafetyapp-ac310-default-rtdb.firebaseio.com",
+    "project_id": "womensafetyapp-ac310",
+    "storage_bucket": "womensafetyapp-ac310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334345397312:android:94f1f7f406f330b9942ba5",
+        "android_client_info": {
+          "package_name": "com.example.firebasephoneauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334345397312-g032kc1mem6ib76519178rek99paumjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasephoneauthentication",
+            "certificate_hash": "9e4548aa6dd99f81510b23a255391ca3c442f516"
+          }
+        },
+        {
+          "client_id": "334345397312-hf734neparduplg35lguh14vpcgr8uoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx1CP5OFwP_lOs-83OEZs0mZ44yzBMkXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334345397312-hf734neparduplg35lguh14vpcgr8uoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334345397312:android:fc40b362c40f86bb942ba5",
+        "android_client_info": {
+          "package_name": "com.example.womensafetyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334345397312-hf734neparduplg35lguh14vpcgr8uoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx1CP5OFwP_lOs-83OEZs0mZ44yzBMkXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334345397312-hf734neparduplg35lguh14vpcgr8uoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup3"
+    android:background="@color/colorPrimary"
+    android:padding="30dp"
+    android:id="@+id/signup_3rd_screen_scroll_view"
+    android:transitionName="transition_OTP_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/signup_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:transitionName="transition_back_arrow_button"
+            android:src="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="CREATE ACCOUNT "
+            android:textAllCaps="true"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:transitionName="transition_title_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="true"
+                app:ccp_showFullName="true"
+                app:ccp_showFlag="true"
+                android:background="@drawable/black_border"
+                android:padding="5dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Phone Number"
+                app:startIconDrawable="@drawable/signup_phoneno"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorBlack"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="3dp"
+                app:boxStrokeColor="@color/colorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:elevation="5dp"
+                android:text="next"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:transitionName="transition_login_btn"
+                android:id="@+id/next_button"
+                android:onClick="callVerifyOTPScreen"
+                android:background="@color/colorBlack"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                android:text="LOGIN"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:transitionName="transition_login_btn"
+                android:id="@+id/signup_login_button"
+                android:background="@color/colorWhite"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

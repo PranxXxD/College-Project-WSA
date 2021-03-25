@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllCategories">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/backbutton"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/search_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="SECURITY FACILITIES"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/card_2"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="@string/call"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/calling"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#00000000"
+                    android:onClick="calling"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/calling"
+                />
+
+
+        </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+
+                android:background="#BFB2C1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="@string/low"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/lowbattery"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#00000000"
+                    android:onClick="lowbattery"
+                   />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="119dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/batterylow" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="#4090"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="@string/shake"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/shake"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#00000000"
+                    android:onClick="shake"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/shake"
+                />
+
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="#EEEFE0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="25dp"
+                        android:text="@string/location_c"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:background="#00000000"
+                        android:onClick="location"
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/location_sharing" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

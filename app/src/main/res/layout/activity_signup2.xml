@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup2"
+    android:background="@color/colorPrimary"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/signup_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:transitionName="transition_back_arrow_button"
+            android:src="@drawable/backbutton"
+            android:onClick="back"/>
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="CREATE ACCOUNT"
+            android:textAllCaps="true"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:transitionName="transition_title_text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:text="DATE OF BIRTH"/>
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
+                android:id="@+id/date"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorBlack"
+                android:elevation="5dp"
+                android:text="NEXT"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:transitionName="transition_next_btn"
+                android:id="@+id/signup_next_button"
+                android:onClick="callNextSignupScreen"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:elevation="5dp"
+                android:text="LOGIN"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:transitionName="transition_login_btn"
+                android:id="@+id/signup_login_button"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

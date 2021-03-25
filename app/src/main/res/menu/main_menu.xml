@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_dashboard_icon"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/menu_search_icon"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/nav_all_categories"
+            android:icon="@drawable/menu_category_icon"
+            android:title="@string/all_categories" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/menu_setting_icon"
+            android:title="@string/setting" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/menu_login"
+                    android:title="LOGIN" />
+                <item
+                    android:id="@+id/nav_new_profile"
+                    android:icon="@drawable/menu_profile"
+                    android:title="UPDATEPROFILE" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/menu_logout"
+                    android:title="LOGOUT" />
+
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="CATEGORIES">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_call"
+                    android:icon="@drawable/menu_call"
+                    android:title="CALL" />
+                <item
+                    android:id="@+id/nav_chat"
+                    android:icon="@drawable/menu_chat"
+                    android:title="CHAT" />
+                <item
+                    android:id="@+id/nav_location"
+                    android:icon="@drawable/menu_location"
+                    android:title="SHARE LOCATION" />
+                <item
+                    android:id="@+id/nav_alert"
+                    android:icon="@drawable/menu_alert"
+                    android:title="ALERT NOTIFICATION" />
+
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="SHARE">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/menu_share"
+                    android:title="SHARE" />
+                <item
+                    android:id="@+id/nav_rateus"
+                    android:icon="@drawable/menu_rateus"
+                    android:title="RATEUS" />
+
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

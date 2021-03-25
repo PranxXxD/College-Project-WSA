@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">WomenSafetyApp</string>
+    <string name="first_slide_title">Share Live Location</string>
+    <string name="second_slide_title">Battery Low Alert</string>
+    <string name="third_slide_title">Share Your Live Location</string>
+    <string name="fourth_slide_title">Your Safety in Your Hands</string>
+
+    <string name="first_slide_desc">Sharing Real Time Location With Friends And Family , Make Life Secure</string>
+    <string name="second_slide_desc"></string>
+    <string name="third_slide_desc">Share Your Live Location\nInstantly</string>
+    <string name="fourth_slide_desc"></string>
+
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+    <string name="otp_code_text">co\nde</string>
+    <string name="otp_verfication_text">verfication</string>
+    <string name="otp_description_text">we have sent you an OTP for phone number verifcation</string>
+
+
+    <string name="forgotdetails">Please enter your registered Email address we will get back to you with the reset passworod lock and confirmation OTP thanks.</string>
+    <string name="makeselection">SELECT WHICH CONTACT DEATAILS SHOULD WE USE TO RESET YOUR PASSWORD</string>
+    <string name="mobile_des">your password will reset via SMS</string>
+    <string name="email_des">your password will reset via Email</string>
+    <string name="credential_detail">YOUR IDENTITY HAS BEEN VERIFIED !
+    SET YOR NEW PASSWORD</string>
+
+    <string name="password_updated">PASSWORD UPDATED</string>
+    <string name="password_verified">YOUR PASSWORD HAS BEEN UPDATED !</string>
+
+    <string name="logo_name">DASHBOARD</string>
+    <string name="search_text">SEARCH ....</string>
+    <string name="calling">CALL</string>
+    <string name="location">LOCATION</string>
+    <string name="alert">ALERT</string>
+    <string name="sms">SMS</string>
+
+    <string name="allcategories">ALL SECURITY FACILITIES</string>
+    <string name="description">categories with descritption</string>
+    <string name="mostviewed">FEATURES</string>
+    <string name="viewall">VIEW ALL</string>
+    <string name="categories">SETTINGS</string>
+    <string name="calling_description"> “Emergency call” button brings up the dial pad and by using that you can make an emergency call</string>
+
+    <string name="home">HOME</string>
+    <string name="search">SEARCH</string>
+    <string name="all_categories">SECURITY\nFACILITIES</string>
+    <string name="setting">SETTINGS</string>
+
+    <string name="slogan_name">your safety in your hands </string>
+    <string name="logoname">Women Safety App</string>
+
+    <string name="call">EMERGENCY \n CALLING</string>
+    <string name="low">LOW \nBATTERY\nNOTIFICATION</string>
+    <string name="stop">STOP</string>
+    <string name="location_c">LOCATION \nSHARING</string>
+    <string name="shake">shake your\nphone in\ncase of\nemergency</string>
+</resources>
