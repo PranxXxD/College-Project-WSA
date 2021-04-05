@@ -115,6 +115,13 @@
                     android:onClick="lowbattery"
                    />
 
+                <Button
+                    android:id="@+id/shake"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#00000000"
+                    android:onClick="shake" />
+
 
             </RelativeLayout>
 
@@ -148,13 +155,6 @@
                     android:textAllCaps="true"
                     android:textColor="@color/colorBlack"
                     android:textSize="18sp" />
-
-                <Button
-                    android:id="@+id/shake"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:background="#00000000"
-                    android:onClick="shake"/>
 
             </RelativeLayout>
 

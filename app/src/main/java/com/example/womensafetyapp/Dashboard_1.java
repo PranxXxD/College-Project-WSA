@@ -1,15 +1,6 @@
 package com.example.womensafetyapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.app.Application;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,9 +10,15 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.navigation.NavigationView;
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class Dashboard_1 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -116,6 +113,8 @@ public class Dashboard_1 extends AppCompatActivity implements NavigationView.OnN
         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.user_profile, "Update Profile"));
         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.add_phoneno, "Update Guardian \nPhoneNo"));
         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.logout, "LOGOUT"));
+        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.sms, "Send message"));
+
 
 
         categoriesRecycler.setHasFixedSize(true);
@@ -220,6 +219,11 @@ public class Dashboard_1 extends AppCompatActivity implements NavigationView.OnN
     }
     public void dashboard_location(View view){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/@18.9728803,73.0287206,15z"));
+        startActivity(intent);
+    }
+
+    public void dashboard_sms(View view){
+        Intent intent = new Intent(Dashboard_1.this,sms.class);
         startActivity(intent);
     }
 

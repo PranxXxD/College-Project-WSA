@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Verify_OTP"/>
+        <activity android:name=".sms"></activity>
+        <activity android:name=".Verify_OTP" />
         <activity android:name=".Profile" />
         <activity android:name=".Feeback" />
         <activity android:name=".ShakeApplication" />

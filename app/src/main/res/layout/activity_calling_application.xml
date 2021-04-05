@@ -37,18 +37,40 @@
             android:layout_marginTop="30dp"
 
             >
+            <EditText
 
-            <TextView
+                android:id="@+id/editText1"
+                android:layout_width="246dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:hint="enter number"
+                android:textSize="20dp"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/editText2"
+                android:onClick="callbutton"
+                android:text="CALL"
+                android:textSize="12sp" />
+
+
+
+            <EditText
 
                 android:id="@+id/editText2"
                 android:layout_width="246dp"
                 android:layout_height="45dp"
-                android:text="9819458161"
+                android:layout_marginTop="57dp"
+                android:hint="enter number"
                 android:textSize="20dp"
-                android:layout_marginTop="57dp"/>
+                android:inputType="number"/>
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_above="@+id/button"
@@ -56,33 +78,19 @@
                 android:layout_marginBottom="-39dp"
                 android:layout_toRightOf="@+id/editText1"
                 android:onClick="callbutton"
-                android:text="CALL" />
-
-            <TextView
-
-                android:id="@+id/editText1"
-                android:layout_width="246dp"
-                android:layout_height="45dp"
-                android:text="8369386670"
-                android:textSize="20dp"
-                android:layout_marginTop="12dp"/>
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_toRightOf="@+id/editText2"
-                android:onClick="callbutton"
                 android:text="CALL"
-                android:layout_height="match_parent" />
+                android:textSize="12sp" />
 
-            <TextView
+
+
+            <EditText
                 android:id="@+id/editText3"
                 android:layout_width="246dp"
                 android:layout_height="45dp"
-                android:text="9167652399"
+                android:layout_marginTop="99dp"
+                android:hint="enter number"
                 android:textSize="20dp"
-                android:layout_marginTop="99dp"/>
+                android:inputType="number"/>
 
             <Button
                 android:id="@+id/button3"
@@ -93,12 +101,14 @@
                 android:layout_marginBottom="-85dp"
                 android:layout_toRightOf="@+id/editText3"
                 android:onClick="callbutton"
-                android:text="CALL" />
+                android:text="CALL"
+                android:textSize="12sp"
+                />
 
 
             <EditText
 
-                android:id="@+id/editText"
+                android:id="@+id/editText4"
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:hint="type your no here"
@@ -114,9 +124,10 @@
                 android:layout_below="@+id/editText1"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="85dp"
-                android:layout_toRightOf="@+id/editText"
+                android:layout_toRightOf="@+id/editText4"
                 android:onClick="CallButton"
-                android:text="CALL" />
+                android:text="CALL"
+                android:textSize="12sp" />
 
         </RelativeLayout>
 
